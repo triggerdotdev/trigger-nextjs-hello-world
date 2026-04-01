@@ -8,7 +8,7 @@ export const helloWorldTask = task({
   run: async (payload: { message: string }) => {
     logger.info("Hello world task started", { payload });
 
-    await wait.for({ seconds: 1 });
+    await wait.for({ seconds: 10 });
 
     const message = `${payload.message} — completed at ${
       new Date().toISOString()
