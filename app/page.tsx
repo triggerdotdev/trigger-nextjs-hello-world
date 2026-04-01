@@ -56,14 +56,14 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero */}
-      <main className="flex-1 flex flex-col items-center justify-center gap-8 px-6">
+      <main className="flex-1 flex flex-col items-center justify-center gap-8 px-6 pb-12 md:pb-0">
         <div className="flex flex-col items-center justify-center text-center space-y-4 ">
           <a
             href="https://trigger.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TriggerLogo className="h-10 md:h-12 w-auto mx-auto" />
+            <TriggerLogo className="h-7 md:h-12 w-auto mx-auto" />
           </a>
           <p className="text-text-dimmed text-sm font-mono">
             Get started by editing{" "}
@@ -84,7 +84,7 @@ export default function Home() {
 
         {/* Result card */}
         {result && (
-          <div className="w-full max-w-md rounded-xl border border-grid-bright bg-card p-5 space-y-3">
+          <div className="w-full max-w-md rounded-xl border border-grid-bright bg-card p-5 space-y-3 mb-3 md:mb-0">
             {result.error ? (
               <p className="text-red-400 text-sm font-mono">{result.error}</p>
             ) : (
@@ -119,7 +119,7 @@ export default function Home() {
             href={card.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-background p-6 hover:bg-charcoal-750 transition-colors"
+            className="group bg-background p-3 sm:p-6 hover:bg-charcoal-750 transition-colors"
           >
             <h2 className="text-sm font-semibold mb-1 group-hover:text-primary transition-colors">
               {card.title}
@@ -127,7 +127,7 @@ export default function Home() {
                 &rarr;
               </span>
             </h2>
-            <p className="text-text-dimmed text-xs leading-relaxed">
+            <p className="hidden sm:block text-text-dimmed text-xs leading-relaxed">
               {card.description}
             </p>
           </a>
