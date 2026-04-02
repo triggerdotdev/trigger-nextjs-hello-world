@@ -10,7 +10,7 @@ The whole thing is ~20 lines of task code in `trigger/hello-world.ts`.
 
 1. The frontend calls `POST /api/hello`
 2. The API route triggers the `hello-world` task using the Trigger.dev SDK
-3. The task runs on Trigger.dev's infrastructure (with retries, logging, the works)
+3. The 'hello-world' task runs on Trigger.dev's infrastructure
 
 ## Local dev
 
