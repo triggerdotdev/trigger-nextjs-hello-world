@@ -6,11 +6,15 @@ A minimal Next.js app that triggers a background task from an API route. Click a
 
 The whole thing is ~20 lines of task code in `trigger/hello-world.ts`.
 
+## Demo screenshot
+
+<img width="1282" height="874" alt="nextjs-trigger-demo" src="https://github.com/user-attachments/assets/5cbad725-7ec3-4925-9498-210eb100f7df" />
+
 ## How it works
 
 1. The frontend calls `POST /api/hello`
 2. The API route triggers the `hello-world` task using the Trigger.dev SDK
-3. The task runs on Trigger.dev's infrastructure (with retries, logging, the works)
+3. The 'hello-world' task runs on Trigger.dev's infrastructure
 
 ## Local dev
 
