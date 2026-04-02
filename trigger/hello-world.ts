@@ -6,7 +6,7 @@ export const helloWorldTask = task({
     maxAttempts: 3,
   },
   run: async (payload: { message: string }) => {
-    logger.info("Hello world task started", { payload });
+    logger.info("Waiting for 10 seconds", { payload });
 
     await wait.for({ seconds: 1 });
 
@@ -14,7 +14,7 @@ export const helloWorldTask = task({
       new Date().toISOString()
     }`;
 
-    logger.info("Hello world task completed", { message });
+    logger.info("Waiting for 10 seconds complete, hello world!", { message });
 
     return { message };
   },
